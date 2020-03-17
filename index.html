@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(162, 202, 202);
+      }
+      #phoneBody {
+        height: 700px;
+        width: 350px;
+        border-radius: 20px;
+        background-color: black;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 2px 1px gold inset,
+          2px 10px 3px rgba(149, 165, 166, 0.1);
+      }
+
+      #screen {
+        background-color: rgb(40, 40, 46);
+        height: 80%;
+        width: 90%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      #screen:before {
+        content: "";
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
+        background-color: rgb(70, 66, 66);
+        top: -40px;
+        left: 100px;
+        position: absolute;
+      }
+
+      article {
+        border: 1px solid grey;
+        border-radius: 15px;
+        padding: 15px;
+        color: white;
+      }
+
+      article:before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 7px;
+        width: 50px;
+        border-radius: 5px;
+        background-color: rgb(70, 66, 66);
+        top: -40px;
+        left: 125px;
+      }
+
+      article:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        left: 125px;
+        bottom: -60px;
+        background-color: rgb(52, 52, 56);
+        box-shadow: 0px 1px 1px #ecf0f1, 1px 0px 1px gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="phoneBody">
+      <div id="screen">
+        <article>CSS Rocks!!! 🤓🤓🤓</article>
+      </div>
+    </div>
+  </body>
+</html>
